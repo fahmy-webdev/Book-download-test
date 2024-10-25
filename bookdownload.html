@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Download</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensure content is spaced between top and bottom */
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5; /* Light gray background */
+            overflow: hidden; /* Prevent scrolling */
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            width: 100%;
+            padding: 1em;
+            position: fixed; /* Fix the navbar at the top */
+            top: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 40px;
+            border-radius: 10px;
+            width: 400px;
+            background-color: #fff; /* White background for the container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better appearance */
+            margin-top: 80px; /* Space for the navbar */
+            flex: 1; /* Allow the container to grow and fill the available space */
+        }
+        .book-cover {
+            width: 100%;
+            height: auto;
+        }
+        .download-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #000;
+            background-color: #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .download-link:hover {
+            background-color: #ccc;
+        }
+        .download-text {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+            width: 100%;
+            height: 8%;
+            position: fixed; /* Fix the footer at the bottom */
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="./home.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+    </div>
+    <div class="container">
+        <img src="./images/black cover.jpg" alt="Book Cover" class="book-cover">
+        <div class="download-text">Download here</div>
+        <a href="https://drive.google.com/drive/u/1/folders/1UgsEZk7v_avail9d4H8Xfu7D65coZSrs" download class="download-link">Download Book</a>
+    </div>
+    <footer>
+        <p>&copy; AFM. All rights reserved.</p>
+    </footer>
+</body>
+</html>
